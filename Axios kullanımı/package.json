@@ -1,0 +1,14 @@
+{
+  "name": "learninaxios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Numan Senlik <nmnsnlk@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "*"
+  }
+}

@@ -1,12 +1,12 @@
 // ! Fech api ya göre direk json formatında dosyayı çekiyoruz birddaa json()dememize gerek kalmıyor.
-// const veri = async()=>{
-//     let {data: users} = await axios("https://jsonplaceholder.typicode.com/posts");
-//     users.forEach(element => {
-//         console.log(element.title)
-//     });
-// }
-// veri()
+const axios = require('axios');
 
+const veri = async()=>{
+    let {data} = await axios("https://jsonplaceholder.typicode.com/users/1");
+    console.log(data);
+}
+veri()
+console.log("Başla");
 
 
 // const getUsers = ()=>{
