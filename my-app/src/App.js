@@ -23,8 +23,10 @@ function App (){
 return(
   <React.Fragment>
     <User name="Mehmet" 
-    surname = "Topuz  "
+    surname = "Topuz"
     isLoggedIn ={true}
+    age = {31}
+    friends={["Numan","Ahmet","Tayfun","Süleyman"]}
     />
 
 
