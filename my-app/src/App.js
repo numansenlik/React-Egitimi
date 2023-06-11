@@ -1,10 +1,9 @@
-import "./App.css";
-import React from'react';
-import Header from './components/Header';
-import User from './components/user'
+import React from "react";
+import User from './components/User';
 const name ="Numan";
 const surname="Şenlik";
 const isLoggedIn = true;
+const friends= [{id:1, name: "Mehmet"},{id:2, name:"Süleyman"},{name: "Ahmet" ,id:3},{name:"Cahit",id:4}];
 function App (){
   // return React.createElement('div',null,'Hello')
 // return(<div>
@@ -18,20 +17,20 @@ function App (){
 {/* <input id="input"/> */}
 // </React.Fragment>)
 
+return(<React.Fragment>
+  <h3>Kullanıcı İslemleri</h3>
+  <User 
+  name = {name} 
+  surname ={surname} 
+  isLoggedIn={isLoggedIn}  
+  age={26}
+  friends={friends}
+  adress= {{title:"Osmangazi/BURSA",zip:190911}}
+  />
+  </React.Fragment>);
+
+}
 // ! ----------------------- Props kullanımı---------------
 // ! Props Farklı bi companenteki fonsıyona bilgi gönderiken çevtimiz kompanente etiket bilgilerini yollaya biliriz
-return(
-  <React.Fragment>
-    <User name="Mehmet" 
-    surname = "Topuz"
-    isLoggedIn ={true}
-    age = {31}
-    friends={["Numan","Ahmet","Tayfun","Süleyman"]}
-    />
 
-
-
-  </React.Fragment>
-  )
-}
 export default App;
