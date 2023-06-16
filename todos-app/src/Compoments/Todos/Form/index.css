@@ -420,7 +420,13 @@ meta,
 [property="todo"] .view:focus-within .toggle,
 [property="todo"] .view:focus-within button {
 	display: none !important;
-}[property][mv-mode=edit]:not([typeof]):not([mv-group]) input.mv-editor, [property][mv-mode=edit]:not([typeof]):not([mv-group]) select.mv-editor, [property][mv-mode=edit]:not([typeof]):not([mv-group]) textarea.mv-editor {
+}
+
+
+.clear-completed:hover {
+	text-decoration: underline;
+}
+[property][mv-mode=edit]:not([typeof]):not([mv-group]) input.mv-editor, [property][mv-mode=edit]:not([typeof]):not([mv-group]) select.mv-editor, [property][mv-mode=edit]:not([typeof]):not([mv-group]) textarea.mv-editor {
     all: unset;
     cursor: auto;
 }

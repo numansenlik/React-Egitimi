@@ -1,21 +1,25 @@
-import {useState} from "react";
-function Form({setTodoList,todoList}) {
-    const [inputText,setInputText]= useState({text:"",line: false});
-    console.log(inputText);
-    const changeInputText=(e)=>{
-        setInputText({text:e.target.value,line:false})
+import { useState } from "react";
+import "./index.css";
+function Form({ setTodoList, todoList }) {
+    const [inputText, setInputText] = useState({ text: "", line: false });
+    const changeInputText = (e) => {
+        setInputText({ text: e.target.value, line: false });
     }
-    const addTodo=(e)=>{
+    const addTodo = (e) => {
         e.preventDefault();
-        if (!inputText.text =="") {
-            setTodoList(...todoList,inputText);
+        if (!(inputText.text === "")) {
+            setTodoList([...todoList, inputText]);
+            e.target.firstChild.value = "";
         }
 
     }
-    return (<div>
+    return (
+    <header className="header">
+        <h1>Todos</h1>
         <form onSubmit={addTodo}>
-        <input onChange={changeInputText} placeholder="What needs to be done?"/>
+            <input property="newTodo" class="new-todo" placeholder="What needs to be done?" autofocus="" mv-mode="edit" aria-label="New todo" onChange={changeInputText} />
         </form>
-    </div>)
+    </header>
+    )
 }
 export default Form;
