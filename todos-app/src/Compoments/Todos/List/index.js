@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 function List({ setTodoList, todoList }) {
 
     const updateTodoList = index => e => {
