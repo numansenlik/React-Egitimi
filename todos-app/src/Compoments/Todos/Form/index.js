@@ -16,7 +16,7 @@ function Form({ setTodoList, todoList }) {
         <header className="header">
             <h1>Todos</h1>
             <form onSubmit={addTodo}>
-                <input property="newTodo" class="new-todo" placeholder="What needs to be done?" autofocus="" mv-mode="edit" aria-label="New todo" onChange={changeInputText} />
+                <input property="newTodo" className="new-todo" placeholder="What needs to be done?" autoFocus="" mv-mode="edit" aria-label="New todo" onChange={changeInputText} />
             </form>
         </header>
     )
