@@ -31,8 +31,9 @@ function Todos() {
     ]
     );
 useEffect(()=>{
-todoList.map((item,index)=>localStorage.setItem(index,{text:item.text,line:item.line}))
-},[todoList])
+todoList.map((item,index)=>localStorage.setItem(index,JSON.stringify(item)
+))},[todoList]);
+
 
     return (
         <section mv-app="todoapp" className
