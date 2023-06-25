@@ -10,15 +10,15 @@ import UserDetail from './pages/UserDetail';
 // !! React  Router kullandığımızda öteki sayfalara geçerken sayfa yenilenmeden geçiyor eğer link kullanırsak sayfa yenılenır.
 function App() {
   return (
-  <BrowserRouter>
-  <Menu/>
-    <Routes>
-        <Route index element={<Home/>}/>
-        <Route path="users" element={<Users />}/>
-        <Route path="users/:id" element={<UserDetail />}/>
-        <Route path="contact" element={<Contact />}/>
-    </Routes>                            
-  </BrowserRouter>);
+    <BrowserRouter>
+      <Menu />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="users" element={<Users />} />
+        <Route path="users/:id" element={<UserDetail />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>);
 };
 
 export default App;
