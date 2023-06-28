@@ -10,3 +10,15 @@ border-bottom: solid 1px #ccc;
 padding: 10px 0;
 column-gap: 10px;
 }
+.form>div{
+margin-bottom: 8px;
+}
+.form > div > label{
+display: block;
+}
+.form>div>input{
+padding: 5px;
+}
+.form>div>textarea{
+  padding: 8px;
+  }
